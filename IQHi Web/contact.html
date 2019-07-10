@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+        <style>
+                body{
+                    background-image: url("./img/contact-bg.png");
+                    background-size: 100%;
+                    background-color: rgb(55, 88, 113);
+                    background-repeat: no-repeat;
+                }
+                
+                </style>
     <title>IQHi - For your bettery</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -49,40 +58,38 @@
     </section>
     </header>
 
+<div class = "contact">
+    <div class = "contact-warp">
+            <form class = "contact-form" method="post" action="mailto:kekohuke@gmail.com?subject=Mail from Website"  enctype="text/pain">
+                    <span class="contact-title">
+                        Contact Us
+                    </span>
+                    <div class = "wrap-input">
+                        <input class = "input" type = "text" name = "name"  placeholder="name" value="name" required>
+                        <span class= "focus-input">
 
-    <div class = "contact-form">
-        <div calss = "left">
-            <h1>Leave us a message</h1>
-        </div>
-        <div class=""></div>
-            <div class="container left">
-                    <form>
-
-                        <label for="fname">First Name*</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
-                        <label for="lname">Last Name*</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                        <label for="email">Email address*</label>
-                        <input type="text" id="email" name="email" placeholder="Your email address..">
-
-                        <label for="subject">Subject*</label>
-                        <input type="text" id="subject" name="subject" placeholder="Subject.."> 
-
-                        <label for="subject">Message*</label>
-                        <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
-                    
-                        <input type="submit" value="SEND MESSAGE">
-                    
-                        </form>
-            </div>
-            <div class = "right">
-                    <img src="./img/contact-img.png" class="d-block w-100" alt="...">
-            </div>
-        </div>
+                        </span>
+                    </div>
+                    <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input class="input" type="text" name="email"  placeholder="email" value = "email" required>
+                            <span class="focus-input"></span>
+                    </div>
+                    <div class="wrap-input" data-validate="Message is required">
+                            <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="container-button">
+                                    <div class="form-button" ></div>
+                                    <button class="contact-button" value="Send">
+                                        Send Message
+                                    </button>
+                            </div>
+            </form>
     </div>
 
+</div>
+</div>
+ 
 </body>
 
 </html>
