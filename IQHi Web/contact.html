@@ -18,6 +18,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
+       })();
+    </script>
 </head>
 <body>
     <header class="header_area">
@@ -60,36 +70,36 @@
 
 <div class = "contact">
     <div class = "contact-warp">
-            <form class = "contact-form" method="post" action="mailto:kekohuke@gmail.com?subject=Mail from Website"  enctype="text/pain">
-                    <span class="contact-title">
-                        Contact Us
-                    </span>
-                    <div class = "wrap-input">
-                        <input class = "input" type = "text" name = "name"  placeholder="name" value="name" required>
-                        <span class= "focus-input">
+        <form class = "contact-form" method="post" id="myform"  enctype="text/pain">
+            <span class="contact-title">
+                Contact Us
+            </span>
+            <div class = "wrap-input">
+                <input class = "input" type = "text" name = "name"  placeholder="name" value="name" required>
+                <span class= "focus-input">
 
-                        </span>
+                </span>
+            </div>
+            <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input" type="text" name="email"  placeholder="email" value = "email" required>
+                    <span class="focus-input"></span>
+            </div>
+            <div class="wrap-input" data-validate="Message is required">
+                    <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
+                    <span class="focus-input"></span>
+                </div>
+                <div class="container-button">
+                            <div class="form-button" ></div>
+                            <button class="contact-button" value="Send">
+                                Send Message
+                            </button>
                     </div>
-                    <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
-                            <input class="input" type="text" name="email"  placeholder="email" value = "email" required>
-                            <span class="focus-input"></span>
-                    </div>
-                    <div class="wrap-input" data-validate="Message is required">
-                            <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
-                            <span class="focus-input"></span>
-                        </div>
-                        <div class="container-button">
-                                    <div class="form-button" ></div>
-                                    <button class="contact-button" value="Send">
-                                        Send Message
-                                    </button>
-                            </div>
-            </form>
+    </form>
+    
     </div>
 
 </div>
-</div>
- 
+<script src="active.js"></script>
 </body>
 
 </html>

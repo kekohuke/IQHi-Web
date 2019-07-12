@@ -182,3 +182,7 @@
     color:white;
     font-family: "Courier New", Courier, monospace;
 }
+
+textarea{
+    height: 150px;
+}
