@@ -2,104 +2,95 @@
 <html lang="en">
 
 <head>
-        <style>
-                body{
-                    background-image: url("./img/contact-bg.png");
-                    background-size: 100%;
-                    background-color: rgb(55, 88, 113);
-                    background-repeat: no-repeat;
-                }
-                
-                </style>
+    <style>
+        body {
+            background-color: rgb(201, 76, 76);
+        }
+    </style>
     <title>IQHi - For your bettery</title>
-    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-            
+
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-            
+
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
-       (function(){
-          emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
-       })();
+        (function() {
+            emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
+        })();
     </script>
 </head>
+
 <body>
     <header class="header_area">
-    <section id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-light">
-    <!--logo-->
-    <a class="navbar-brand" href="index.html">
-        <img src="./img/iqhi.png" alt = "iqhi logo">
-    </a>
-    <!--Menu-->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-                            
-    <li class="nav-item active">
-        <a class="nav-link" href="index.html">HOME </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">AWESOME FEATURES</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">VALUE PROPOSITION</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">OUTSTANDING FOUNDERS</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">SEARCH</a>
-    </li>
-    </ul>
-    </div>
-    </nav>
-    </section>
+        <section id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!--logo-->
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/iqhi.png" alt="iqhi logo">
+                </a>
+                <!--Menu-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">HOME </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SEARCH</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
     </header>
 
-<div class = "contact">
-    <div class = "contact-warp">
-        <form class = "contact-form" method="post" id="myform"  enctype="text/pain">
-            <span class="contact-title">
-                Contact Us
-            </span>
-            <div class = "wrap-input">
-                <input class = "input" type = "text" name = "name"  placeholder="name" value="name" required>
-                <span class= "focus-input">
-
+    <div class="contact">
+        <div class="contact-warp">
+            <form class="contact-form" method="post" id="myform" enctype="text/pain">
+                <span class="contact-title">
+                    Contact Us
                 </span>
-            </div>
-            <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input" type="text" name="email"  placeholder="email" value = "email" required>
+                <div class="wrap-input">
+                    <input class="input" type="text" name="name" placeholder="name" value="name" required>
+                    <span class="focus-input">
+                    </span>
+                </div>
+                <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input class="input" type="text" name="email" placeholder="email" value="email" required>
                     <span class="focus-input"></span>
-            </div>
-            <div class="wrap-input" data-validate="Message is required">
+                </div>
+                <div class="wrap-input" data-validate="Message is required">
                     <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
                     <span class="focus-input"></span>
                 </div>
                 <div class="container-button">
-                            <div class="form-button" ></div>
-                            <button class="contact-button" value="Send">
-                                Send Message
-                            </button>
-                    </div>
-    </form>
-    
+                    <div class="form-button"></div>
+                    <button class="contact-button" value="Send">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
     </div>
-
-</div>
-<script src="active.js"></script>
-</body>
-
-</html>
+    <script src="active.js"></script>
+</body></html>
