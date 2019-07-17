@@ -77,6 +77,7 @@
     border: none!important;
     
 }
+
 .contact{
     width: 100%;
     min-height: 100vh;
@@ -105,7 +106,7 @@
     display:block;
     font-family:Courier, sans-serif;
     font-size:50px;
-    color: rgb(255, 255, 255);
+    color:dimgray;
     line-height: 1.5;
     text-align:center;
     padding-bottom: 90px;
@@ -124,7 +125,7 @@
     width: 100%;
     font-family:Courier;
     font-size: 15px;
-    color: #ffffff;
+    color: dimgray;
     border: none;
     background-color:transparent;
     line-height: 1.2;
@@ -163,26 +164,64 @@
     font-family: Courier;
     font-size: 20px;
     background-color:transparent;
-    color:white;
+    color:dimgray;
     line-height: 1.2;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 12px;
 
-    background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+    background: linear-gradient(to right, rgb(81, 98, 131) 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
+    transition: all .2s ease-out;
 }
 .contact-button:hover{
-    color:black;
+    color:navajowhite;
 
     background-position: left bottom;
 }
 ::placeholder{
-    color:white;
+    color:dimgray;
     font-family: "Courier New", Courier, monospace;
 }
 
 textarea{
     height: 150px;
+}
+
+.bodytext-layout-layer0
+{
+    padding: 10px;
+}
+
+.body-text
+{
+    border: 1px solid transparent;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    color:darkslateblue;
+    font-size: 20px;
+    font-family: Georgia, serif;
+    background-color: #f1f1f1;
+    padding: 20px;
+    line-height: 2;
+    padding-left:  60px;
+    text-indent: -20px;
+}
+
+.body-head
+{
+    padding: 20px;
+    font-family:Courier, sans-serif;
+    color: dimgray;
+    font-weight: bold;
+}
+
+.bodytext-layout
+{
+    padding: 300px;
+}
+
+.contact-img img{
+    border-radius: 50%;
 }

@@ -2,19 +2,13 @@
 <html lang="en">
 
 <head>
-    <style>
-        body {
-            background-color: rgb(201, 76, 76);
-        }
-    </style>
-    <title>IQHi - For your bettery</title>
+    <title>IQHi - Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -27,7 +21,7 @@
 </head>
 
 <body>
-    <header class="header_area">
+    <header class="header_area clearfix">
         <section id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!--logo-->
@@ -45,10 +39,10 @@
                             <a class="nav-link" href="index.html">HOME </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                            <a class="nav-link" href="aboutus.html">ABOUT US</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCT</a>
+                            <a class="nav-link" href="product.html">PRODUCT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
@@ -61,10 +55,10 @@
             </nav>
         </section>
     </header>
-
-    <div class="contact">
-        <div class="contact-warp">
-            <form class="contact-form" method="post" id="myform" enctype="text/pain">
+    <div class="bodytext-layout container">
+        
+        <div class=" bodytext-layout-layer0 row">
+            <form class="contact-form col" method="post" id="myform" enctype="text/pain">
                 <span class="contact-title">
                     Contact Us
                 </span>
@@ -88,9 +82,11 @@
                     </button>
                 </div>
             </form>
-
+            <div class="col contact-img" id="contact-img-container">
+                <img src="img/contact-img.PNG" width="700px" align="middle">
+            </div>
         </div>
-
     </div>
+
     <script src="active.js"></script>
 </body></html>
