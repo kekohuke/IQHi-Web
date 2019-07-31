@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <title>IQHi - Contact Us</title>
     <link rel="stylesheet" href="style.css">
@@ -13,11 +11,6 @@
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
-        })();
-    </script>
 </head>
 
 <body>
@@ -47,46 +40,100 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SEARCH</a>
-                        </li>
                     </ul>
                 </div>
             </nav>
         </section>
     </header>
-    <div class="bodytext-layout container">
-        
-        <div class=" bodytext-layout-layer0 row">
-            <form class="contact-form col" method="post" id="myform" enctype="text/pain">
-                <span class="contact-title">
-                    Contact Us
-                </span>
-                <div class="wrap-input">
-                    <input class="input" type="text" name="name" placeholder="name" value="name" required>
-                    <span class="focus-input">
+    <div class="contact-bg">
+        <div class="bodytext-layout container">
+
+            <div class=" bodytext-layout-layer0 row">
+                <form class="contact-form col" method="post" id="myform" enctype="text/pain">
+                    <span class="contact-title">
+                        Contact Us
                     </span>
-                </div>
-                <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input" type="text" name="email" placeholder="email" value="email" required>
-                    <span class="focus-input"></span>
-                </div>
-                <div class="wrap-input" data-validate="Message is required">
-                    <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
-                    <span class="focus-input"></span>
-                </div>
-                <div class="container-button">
-                    <div class="form-button"></div>
-                    <button class="contact-button" value="Send">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-            <div class="col contact-img" id="contact-img-container">
-                <img src="img/contact-img.PNG" width="700px" align="middle">
+                    <div class="wrap-input">
+                        <input class="input" type="text" name="name" placeholder="name" value="name" required>
+                        <span class="focus-input">
+                        </span>
+                    </div>
+                    <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input class="input" type="text" name="email" placeholder="email" value="email" required>
+                        <span class="focus-input"></span>
+                    </div>
+                    <div class="wrap-input" data-validate="Message is required">
+                        <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
+                        <span class="focus-input"></span>
+                    </div>
+                    <div class="container-button">
+                        <div class="form-button"></div>
+                        <button class="contact-button" value="Send">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    <footer class="footer-elements page-footer font=small indigo">
+        <div class="top-footer">
+            <div class="footer-content">
+                <a href="index.html" id="iqhi-icon">
+                    <div class="footer-iqhi-icon">
+                        <img src="./img/iqhi-white.png" alt="iqhi logo">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/iqhi/">
+                    <div class="social-links">
+                        <img src="img/link-icon.png">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/yige.li.9216">
+                    <div class="social-links">
+                        <img src="img/facebook-icon.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/iqhi_1/">
+                    <div class="social-links">
+                        <img src="img/ins-icon.png">
+                    </div>
+                </a>
 
+            </div>
+            <div class="footer-bot container text-center text-md-left">
+                <div class="row">
+                    <div class="footer-links ">
+                        <a href="index.html" style="text-decoration:none">HOME </a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="aboutus.html" style="text-decoration:none">ABOUT US</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="product.html" style="text-decoration:none">PRODUCT</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="contact.html" style="text-decoration:none">CONTACT</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="mailto:iqhi.contactus@gmail.com" class="maillink" style="text-decoration:none">iqhi.contactus@gmail.com</a>
+                        <p>(951) 907-3830</p>
+                        <p>525 S Hewitt St, Los Angeles, CA 90013</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bot">
+            <p>© 2019 IQHi. Inc. </p>
+        </div>
+        <div class="bot-footer">
+        </div>
+    </footer>
     <script src="active.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
+        })();
+    </script>
 </body></html>

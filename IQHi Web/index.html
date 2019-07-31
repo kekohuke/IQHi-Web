@@ -2,8 +2,9 @@
 
 <head>
     <title>IQHi - For your bettery</title>
-    <style>body{
-        background-color: antiquewhite;
+    <style>
+        body {
+            background-color: antiquewhite;
         }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -12,6 +13,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -30,7 +34,7 @@
                     <ul class="navbar-nav ml-auto">
 
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">HOME </a>
+                            <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="aboutus.html">ABOUT US</a>
@@ -39,39 +43,84 @@
                             <a class="nav-link" href="product.html">PRODUCT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">SEARCH</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </section>
     </header>
-    <div id="SlidesCOVER" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./img/index-bg.png" class="d-block w-100" alt="...">
+
+    <div class="index-bg">
+        <div class="temp_body_top">
+        </div>
+        <div class="row">
+            <div class="bodytext-layout">
+                <div class="body-head ">
+                    <h1>Focusing Helping Your Battery</h1>
+                </div>
+                <div class="index-body-layout">
+                    <a href="contact.html">
+                    <button class="index-contact-button">
+                         contact us
+                    </button>
+                    </a>
+                        </div>
             </div>
         </div>
     </div>
-    </div>
-    <div id="AwesomeFeatures" class="justify-content-end">
 
-        <h1 class="display-4 justify-content-end"> Awesome Features</h1>
-        <p class="lead">Battery Diagnose</p>
-        <hr class="my-4">
-        <p>With advanced technology to improve safety and lifetime</p>
-    </div>
+    <footer class="footer-elements page-footer font=small indigo">
+        <div class="top-footer">
+            <div class="footer-content">
+                <a href="index.html" id="iqhi-icon">
+                    <div class="footer-iqhi-icon">
+                        <img src="./img/iqhi-white.png" alt="iqhi logo">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/company/iqhi/">
+                    <div class="social-links">
+                        <img src="img/link-icon.png">
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/yige.li.9216">
+                    <div class="social-links">
+                        <img src="img/facebook-icon.png">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/iqhi_1/">
+                    <div class="social-links">
+                        <img src="img/ins-icon.png">
+                    </div>
+                </a>
 
-    <div id="Founders" class="justify-content-end">
+            </div>
+            <div class="footer-bot container text-center text-md-left">
+                <div class="row">
+                    <div class="footer-links ">
+                        <a href="index.html" style="text-decoration:none">HOME </a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="aboutus.html" style="text-decoration:none">ABOUT US</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="product.html" style="text-decoration:none">PRODUCT</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="contact.html" style="text-decoration:none">CONTACT</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="mailto:iqhi.contactus@gmail.com" class="maillink" style="text-decoration:none">iqhi.contactus@gmail.com</a>
+                        <p>(951) 907-3830</p>
+                        <p>525 S Hewitt St, Los Angeles, CA 90013</p>
+                    </div>
+                </div>
+            </div>
 
-        <h1 class="display-4 justify-content-end"> Outstanding Founders</h1>
-        <hr class="my-4">
-        <p>With advanced technology to improve safety and lifetime</p>
-    </div>
+        </div>
+        <div class="footer-bot">
+            <p>© 2019 IQHi. Inc. </p>
+        </div>
+    </footer>
     <script src="active.js"></script>
-</body>
-
-</html>
+</body></html>

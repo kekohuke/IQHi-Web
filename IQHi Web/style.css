@@ -21,7 +21,7 @@
 }
 
 .header_area.sticky {
-    background-color: rgb(74, 90, 119);
+    background-color: black;
     background-image:none;
     box-shadow: 0 6px 30px rgb(64, 71, 92);
     height: 80px;
@@ -33,9 +33,12 @@
 .navbar-brand img
 {
     height: 70px;
-    padding-left:30px;
+    padding-left: 5em;
 }
-
+.navbar-nav
+{
+    padding-right: 10em;
+}
 .navbar-nav li
 {
     padding: 0 10px;
@@ -45,10 +48,14 @@
 {
     float:right;
     text-align: left;
+    
+    transition: all .2s ease-out;
 }
 #navbar ul li a:hover
 {
-    color: rgb(89, 168, 85)!important;
+    color: white!important;
+    background-color: rgb(89, 96, 252)!important;
+    border-radius: 5%;
 }
 
 .navbar-toggler
@@ -58,7 +65,7 @@
 
 .nav-link
 {
-    color: #555!important;
+    color: black!important;
     font-weight: 600;
     font-size: 16px;
 }
@@ -104,9 +111,9 @@
 }
 .contact-title{
     display:block;
-    font-family:Courier, sans-serif;
+    font-family:"Arial Black", Gadget, sans-serif;
     font-size:50px;
-    color:dimgray;
+    color:black;
     line-height: 1.5;
     text-align:center;
     padding-bottom: 90px;
@@ -123,10 +130,11 @@
     height:45px;
     display:block;
     width: 100%;
-    font-family:Courier;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: dimgray;
+    color: midnightblue;
     border: none;
+
     background-color:transparent;
     line-height: 1.2;
 }
@@ -156,72 +164,190 @@
     margin: 0 auto;
 }
 .contact-button{
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     padding: 0 20px;
     min-width: 200px;
     height: 50px;
-    font-family: Courier;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
-    background-color:transparent;
-    color:dimgray;
+    color:white;
     line-height: 1.2;
     border: 2px solid black;
     border-radius: 12px;
-
-    background: linear-gradient(to right, rgb(81, 98, 131) 50%, transparent 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
+    background-color:black;
     transition: all .2s ease-out;
 }
 .contact-button:hover{
-    color:navajowhite;
+    color:black;
+    background-color:white;
+        border: 2px solid white;
+    background-position: left bottom;
+}
+.index-body-layout{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 5em;
+}
+.index-contact-button{
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 200px;
+    height: 70px;
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    color:white;
+    line-height: 1.2;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color:black;
+    transition: all .2s ease-out;
+}
 
+.index-contact-button:hover{
+    color:black;
+    background-color:white;
+        border: 2px solid white;
     background-position: left bottom;
 }
 ::placeholder{
-    color:dimgray;
-    font-family: "Courier New", Courier, monospace;
+    color: midnightblue;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 textarea{
     height: 150px;
 }
 
-.bodytext-layout-layer0
+.bodytext-layout-layer0 img
 {
-    padding: 10px;
+    padding-bottom: 10px;
 }
 
 .body-text
 {
-    border: 1px solid transparent;
     padding: 10px;
-    width: 100%;
     text-align: left;
-    color:darkslateblue;
+    color:white;
     font-size: 20px;
     font-family: Georgia, serif;
-    background-color: #f1f1f1;
-    padding: 20px;
-    line-height: 2;
-    padding-left:  60px;
+    justify-content: left;
     text-indent: -20px;
+    line-height: 200%;
+    width: 50%;
 }
 
+.carousel-inner img
+{
+
+}
 .body-head
 {
     padding: 20px;
-    font-family:Courier, sans-serif;
-    color: dimgray;
+    font-family:"Arial Black", Gadget, sans-serif;
+    color: white;
     font-weight: bold;
 }
 
 .bodytext-layout
 {
-    padding: 300px;
+    padding: 300px 0 30em 0;
+    max-width: 70%;
+    justify-content: center;
+    
 }
 
 .contact-img img{
     border-radius: 50%;
+}
+.index-bg{
+    background-image:url("img/index-bg.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+
+.product-bg{
+    background-image:url("img/product-bg.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+    max-width:inherit;
+}
+.about-us-bg{
+    background-image:url("img/about-us-bg.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+
+.contact-bg{
+    background-image:url("img/contact-bg.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+.footer-elements{
+background:rgb(199, 203, 205);
+    width: 100%;
+    color: #fff;
+}
+
+.footer-content{
+    margin: 0 auto;
+    padding: 0em 0em 4em;
+    max-width: 70%;
+    border-bottom: 1px solid white;
+    
+
+}
+
+.social-links img{
+    height: 50px;
+    float: right;
+    padding: 10px;
+    border-radius: 50%;
+}
+.footer-iqhi-icon img{
+    height: 60px;
+    float: left;
+}
+
+.footer-bot{
+    margin: 0 auto;
+    max-width: 70%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+}
+.footer-links{
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 2em 0 2em;
+    
+}
+.footer-links a{
+    color:white;
+}
+
+.footer-links a:hover{
+    color: white!important;
+}
+.maillink:hover{
+    color: white!important;
+    
+}
+
+.row{
+    justify-content: center;
+}
+#footer{
+    position:absolute;
+    bottom:0;
 }
