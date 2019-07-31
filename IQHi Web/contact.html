@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>IQHi - Contact Us</title>
     <link rel="stylesheet" href="style.css">
@@ -49,30 +50,34 @@
         <div class="bodytext-layout container">
 
             <div class=" bodytext-layout-layer0 row">
-                <form class="contact-form col" method="post" id="myform" enctype="text/pain">
-                    <span class="contact-title">
-                        Contact Us
-                    </span>
-                    <div class="wrap-input">
-                        <input class="input" type="text" name="name" placeholder="name" value="name" required>
-                        <span class="focus-input">
+                <div class="contact-layout">
+                    <form class="contact-form col" method="post" id="myform" enctype="text/pain">
+                        <span class="contact-title">
+                            Contact Us
                         </span>
-                    </div>
-                    <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input" type="text" name="email" placeholder="email" value="email" required>
-                        <span class="focus-input"></span>
-                    </div>
-                    <div class="wrap-input" data-validate="Message is required">
-                        <textarea class="input" name="message" placeholder="message" value="message" required></textarea>
-                        <span class="focus-input"></span>
-                    </div>
-                    <div class="container-button">
-                        <div class="form-button"></div>
-                        <button class="contact-button" value="Send">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
+                        <div class="wrap-input">
+                            <input class="input" type="text" name="name" placeholder="name" required>
+                            <span class="focus-input">
+                            </span>
+                        </div>
+                        <div class="wrap-input" data-validate="Valid email is required: ex@abc.xyz">
+                            <input class="input" type="text" name="email" placeholder="email" required>
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="wrap-input" data-validate="Message is required">
+                            <textarea class="input" name="message" placeholder="message" required></textarea>
+                            <span class="focus-input"></span>
+                        </div>
+                        <div class="container-button">
+                            <div class="form-button"></div>
+                            <button class="contact-button" value="Send">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+
+
+                </div>
             </div>
         </div>
     </div>
@@ -135,5 +140,8 @@
         (function() {
             emailjs.init("user_SsydxSWgdxiWxHhZBJGee");
         })();
+
     </script>
-</body></html>
+</body>
+
+</html>

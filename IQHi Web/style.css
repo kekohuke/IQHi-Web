@@ -107,7 +107,8 @@
     box-sizing: border-box;
 }
 .contact-form{
-    width: 100%;
+    width: 50%;
+
 }
 .contact-title{
     display:block;
@@ -119,11 +120,21 @@
     padding-bottom: 90px;
     font-weight: bold;
 }
+
+.contact-layout{
+        display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    width: 50%;
+    
+}
 .wrap-input{
     width:100%;
-    border-bottom:2px solid #adadad;
+    border-bottom:2px solid black;
     margin-bottom: 40px;
     position:relative;
+    background-color:transparent;
     color: transparent;
 }
 .input{
@@ -240,11 +251,6 @@ textarea{
     line-height: 200%;
     width: 50%;
 }
-
-.carousel-inner img
-{
-
-}
 .body-head
 {
     padding: 20px;
@@ -266,6 +272,20 @@ textarea{
 }
 .index-bg{
     background-image:url("img/index-bg.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+
+.index-bg-2{
+    background-image:url("img/product-1.JPG");
+    background-size:cover;
+    background-repeat: no-repeat;
+     width: 100%;
+}
+
+.index-bg-3{
+    background-image:url("img/product-2.JPG");
     background-size:cover;
     background-repeat: no-repeat;
      width: 100%;
