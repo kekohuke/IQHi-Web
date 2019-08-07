@@ -318,13 +318,16 @@ background:rgb(199, 203, 205);
 
 .footer-content{
     margin: 0 auto;
-    padding: 0em 0em 4em;
-    max-width: 70%;
+    max-width: 75%;
+    justify-content: center;
     border-bottom: 1px solid white;
+    display: flex;
     
 
 }
-
+.footer-content-inside{
+    width: 90%;
+}
 .social-links img{
     height: 50px;
     float: right;
@@ -349,7 +352,7 @@ background:rgb(199, 203, 205);
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 2em;
     
 }
 .footer-links a{
@@ -366,8 +369,26 @@ background:rgb(199, 203, 205);
 
 .row{
     justify-content: center;
+    display: flex;
+}
+
+.row.row-footer{
+    justify-content: flex;
 }
 #footer{
     position:absolute;
     bottom:0;
+}
+
+.footer-icons{
+    right:0px;
+    float:right;
+    justify-content: flex-end;
+    width: 50%;
+}
+.footer-iqhi-icon{
+    right:0px;
+    float:left;
+    justify-content: flex-start;
+    width: 50%;
 }
